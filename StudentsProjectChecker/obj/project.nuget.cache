@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "QeuGCb6OJ3TSCB3iDlXG5UlG0k13ss4Lk8Mxgqjoe7sGeVIGD+HYjbLt6o+CJ/WGQyw3908InUnnEpLvoVgXLA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\LAMER\\source\\repos\\StudentsProjectChecker\\StudentsProjectChecker\\StudentsProjectChecker.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\LAMER\\.nuget\\packages\\npgsql\\6.0.3\\npgsql.6.0.3.nupkg.sha512",
+    "C:\\Users\\LAMER\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

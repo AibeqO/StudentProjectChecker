@@ -1,0 +1,34 @@
+﻿<Window x:Class="StudentsProjectChecker.Registration"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:StudentsProjectChecker"
+        mc:Ignorable="d"
+        Title="Регистрация" Height="359" Width="607">
+    <Grid Margin="0,0,0,-6">
+        <Grid HorizontalAlignment="Center" Height="320" Margin="0,12,0,0" VerticalAlignment="Top" Width="475">
+
+            <RadioButton x:Name="teacherPicked" Content="Преподаватель" HorizontalAlignment="Left" Margin="10,25,0,0" VerticalAlignment="Top" Checked="RadioButton_Checked"/>
+            <RadioButton x:Name="studentPicked" Content="Студент                      " HorizontalAlignment="Left" Margin="166,25,0,0" VerticalAlignment="Top" Checked="studentPicked_Checked"/>
+            <TextBox x:Name="LastName" HorizontalAlignment="Left" Margin="4,70,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="139" FontSize="14" FontFamily="Times New Roman"/>
+            <Label Content="Фамилия" HorizontalAlignment="Left" Margin="1,45,0,0" VerticalAlignment="Top" FontSize="11" Foreground="#FF7C5B5B"/>
+            <TextBox x:Name="patronymic" HorizontalAlignment="Left" Margin="335,70,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="138" FontSize="14" FontFamily="Times New Roman"/>
+            <Label Content="Имя" HorizontalAlignment="Left" Margin="161,45,0,0" VerticalAlignment="Top" FontSize="11" Foreground="#FF7C5B5B"/>
+            <TextBox x:Name="FirstName" HorizontalAlignment="Left" Margin="166,70,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="139" FontSize="14" FontFamily="Times New Roman"/>
+            <Label Content="Отчество" HorizontalAlignment="Left" Margin="342,45,0,0" VerticalAlignment="Top" FontSize="11" Foreground="#FF7C5B5B"/>
+            <Label Content="Группа" HorizontalAlignment="Left" Margin="1,98,0,0" VerticalAlignment="Top" FontSize="11" Foreground="#FF7C5B5B"/>
+            <ComboBox x:Name="groupList" HorizontalAlignment="Left" Margin="4,123,0,0" VerticalAlignment="Top" Width="139" SelectionChanged="groupList_SelectionChanged"/>
+            <TextBox x:Name="EMailtxt" HorizontalAlignment="Left" Margin="167,125,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="138" FontSize="14" FontFamily="Times New Roman"/>
+            <Label Content="Почта" HorizontalAlignment="Left" Margin="161,98,0,0" VerticalAlignment="Top" FontSize="11" Foreground="#FF7C5B5B"/>
+            <Label Content="Пароль" HorizontalAlignment="Left" Margin="334,100,0,0" VerticalAlignment="Top" FontSize="11" Foreground="#FF7C5B5B"/>
+            <PasswordBox x:Name="pwdTxt" HorizontalAlignment="Left" Margin="335,127,0,0" VerticalAlignment="Top" Width="140" FontSize="14" FontFamily="Times New Roman"/>
+            <Label Content="Список предметов" HorizontalAlignment="Left" Margin="6,150,0,0" VerticalAlignment="Top" FontSize="11" Foreground="#FF7C5B5B"/>
+            <Label Content="Тип учетной записи" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="11" Foreground="#FF7C5B5B"/>
+            <Button x:Name="registerBtn" Content="Зарегистрироваться" HorizontalAlignment="Left" Margin="335,173,0,0" VerticalAlignment="Top" Click="Button_Click_1" Width="119"/>
+
+        </Grid>
+        <DataGrid x:Name="subjectGrid" Margin="77,186,229,31"/>
+
+    </Grid>
+</Window>

@@ -1,0 +1,15 @@
+﻿<Window x:Class="StudentsProjectChecker.SelectionWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:StudentsProjectChecker"
+        mc:Ignorable="d"
+        Title="SelectionWindow" Height="450" Width="685">
+    <Grid>
+        <DataGrid x:Name="TeacherGrid" Margin="21,45,353,10" CellEditEnding="CellEditEnding"/>
+        <Button x:Name="button1" Content="Выбрать преподавателя" HorizontalAlignment="Left" Margin="21,20,0,0" VerticalAlignment="Top" Width="146" Click="Button_Click"/>
+        <DataGrid x:Name="SubjectGrid" Margin="364,45,10,10" CellEditEnding="CellEditEndingSubject"/>
+        <Button x:Name="button1_Copy" Content="Выбрать предмет преподавателя" HorizontalAlignment="Left" Margin="364,20,0,0" VerticalAlignment="Top" Width="201" Click="Button2_Click"/>
+    </Grid>
+</Window>

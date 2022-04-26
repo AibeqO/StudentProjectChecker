@@ -1,0 +1,17 @@
+﻿<Window x:Class="StudentsProjectChecker.TeacherWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:StudentsProjectChecker"
+        mc:Ignorable="d"
+        Title="TeacherWindow" Height="450" Width="800">
+    <Grid>
+        <DataGrid x:Name="projectDataGrid" Margin="0,44,0,0" IsReadOnly="True" AutoGenerateColumns="True"/>
+        <Button x:Name="finButton" Content="Поиск" HorizontalAlignment="Left" Margin="20,10,0,0" VerticalAlignment="Top" Width="144" Height="30" Click="finButton_Click"/>
+        <RadioButton x:Name="findByGroupName" Content="Поиск по группам" HorizontalAlignment="Left" Margin="197,18,0,0" VerticalAlignment="Top" Checked="findByGroupName_Checked"/>
+        <RadioButton x:Name="findByStudentName" Content="Поиск по Фамилии" HorizontalAlignment="Center" Margin="0,18,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="dataForFind" HorizontalAlignment="Left" Margin="610,14,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="169" FontFamily="Times New Roman" FontSize="18"/>
+        <Label Content="Данные для поиска" HorizontalAlignment="Left" Margin="488,13,0,0" VerticalAlignment="Top"/>
+    </Grid>
+</Window>

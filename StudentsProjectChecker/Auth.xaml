@@ -1,0 +1,22 @@
+﻿<Window x:Class="StudentsProjectChecker.Auth"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:StudentsProjectChecker"
+        mc:Ignorable="d"
+        Title="Авторизация" Height="450" Width="800">
+    <Grid>
+        <Grid HorizontalAlignment="Center" Height="180" Margin="0,124,0,0" VerticalAlignment="Top" Width="276">
+            <Label Content="Почта" HorizontalAlignment="Center" VerticalAlignment="Top" Height="36" Width="58" FontSize="16"/>
+            <Label Content="Пароль" HorizontalAlignment="Center" Margin="0,67,0,0" VerticalAlignment="Top" Height="36" Width="64" FontSize="16"/>
+            <TextBox x:Name="email" HorizontalAlignment="Center" Margin="0,36,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="276" Height="26" FontSize="16"/>
+            <Button x:Name="teacherAuthButton" Content="Я преподаватель" HorizontalAlignment="Left" Margin="0,126,0,0" VerticalAlignment="Top" Width="132" Height="24" FontSize="14" Click="Button_Click"/>
+            <Button Content="Я студент" HorizontalAlignment="Left" Margin="137,126,0,0" VerticalAlignment="Top" Width="139" Height="24" FontSize="14" Click="Button_Click_2"/>
+            <Button Content="Регистрация" HorizontalAlignment="Center" Margin="0,156,0,0" VerticalAlignment="Top" Width="276" Height="24" FontSize="14" Click="Button_Click_1"/>
+
+        </Grid>
+        <PasswordBox x:Name="pwdBox" HorizontalAlignment="Center" Margin="0,217,0,0" VerticalAlignment="Top" Width="276" FontSize="16"/>
+
+    </Grid>
+</Window>

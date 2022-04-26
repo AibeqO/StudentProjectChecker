@@ -1,0 +1,19 @@
+﻿<Window x:Class="StudentsProjectChecker.HeadingsList"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:StudentsProjectChecker"
+        mc:Ignorable="d"
+        Title="HeadingsList" Height="450" Width="800">
+    <Grid>
+        <ListBox x:Name="headings" Margin="10,10,346,10"/>
+        <Button Content="Добавить" HorizontalAlignment="Left" Height="30" Margin="489,52,0,0" VerticalAlignment="Top" Width="180"/>
+        <Button Content="Удалить" HorizontalAlignment="Left" Height="30" Margin="489,143,0,0" VerticalAlignment="Top" Width="180"/>
+        <Button Content="Назад" HorizontalAlignment="Left" Height="30" Margin="489,178,0,0" VerticalAlignment="Top" Width="180"/>
+        <TextBox HorizontalAlignment="Left" Margin="489,87,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="180" Text="Оглавление"/>
+        <ComboBox HorizontalAlignment="Left" Margin="553,110,0,0" VerticalAlignment="Top" Width="116"/>
+        <Label Content="Уровень:" HorizontalAlignment="Left" Margin="489,106,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>
